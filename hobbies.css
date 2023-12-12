@@ -70,18 +70,6 @@ h1 {
   border-radius: 10px;
   font-size: larger;
 }
-a {
-  text-decoration: none;
-  font-size: 20px;
-  text-align: center;
-  color: aquamarine;
-  position: absolute;
-  left: 40vw;
-}
-a:hover {
-  color: white;
-  text-decoration: underline;
-}
 
 /* for phones */
 @media only screen and (max-width: 600px) {
