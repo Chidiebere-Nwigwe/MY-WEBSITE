@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chidiebere Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header id="header">
+       
+        <div class="nav">
+            <nav>
+                <h1>Chidiebere</h1>
+                <ul>
+                <li><a href="#header">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#hobbies">Hobbies</a></li>
+               <li class="navcon"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+       
+    </header>
+   <p>Software Developer</p>
+   <h2 class="firsth2">Hello, I'm <span title="Chidiebere Nwigwe">Chidiebere</span> 
+    <br>Nwigwe from Nigeria.
+    <br>
+    <a href="/Cheatsheet/cheatsheet.html" target="_blank">Click to see my HTML 
+        <br> Cheat Sheet</a>
+</h2>
+
+
+   <!-- my about -->
+    <div id="about">
+        <aside class="container">
+            <div class="row1">
+                <figcaption class="column1"><img src="images/IMG_9032.jpg" alt="Chidi's Photo"></figcaption>
+                    <div class="column2">
+                        <h2>About Me</h2>
+                        <p>I am Chidiebere Nwigwe from Anambra State,Nigeria. I am an upcoming Software Developer
+                            I have always thought to myself of how i can be a solution to the people or to the globe as a whole and thereby 
+                            that thought gave me  interest in building software applications basically to solve people's problem through the use of technology.
+                            I am just a starter as i have not had a professional job yet because i still have a long way to go but i really like how it is already going
+                            so for sure I definitely have a future in this career path that I have chosen.
+                        </p>
+                        <div class="titles">
+                            <p class="tablinks active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tablinks" id="exp" onclick="opentab('experience')">Experience</p>
+                            <p class="tablinks" onclick="opentab('education')">Education</p>
+                        </div>
+                        <article class="contents active-tab" id="skills">
+                            <ul><li><span>Web Development</span> <br>Learning Web Development</li>
+                                <li><span>App Development</span> <br>Learning App Development</li> 
+                            </ul>
+                        </article>
+                        <article class="contents" id="experience">
+                            <p>
+                                <ul>
+                                <li><span>Software Development</span><br>Software Development Training at Bow Valley College</li>
+                                </ul>
+                            </p>
+                        </article>
+                        <article class="contents" id="education">
+                            <p>
+                                <ul>
+                                <li><span>2023</span> <br>Diploma from Bow Valley College</li>
+                                <li><span>2015</span> <br>Faith Academy</li>
+                                </ul>
+                            </p>
+                        </article>
+
+                    </div>
+            </div>
+        </aside>
+    </div>    
+    <!-- my hobbies / interest -->
+        <div id="hobbies">
+            <div class="container">
+                <h1 class="hobbies">Hobbies</h1>
+                <div class="section">
+                    <div>
+                        <img src="images/hobbies.jpg" alt="Hobbies Photo">
+                        <p class="hobbiestext"><a href="Hobbies/hobbies.html" target="_blank">Read More</a></p>
+    
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+
+    <!-- my contact -->
+<div id="contact">
+    <div class="row">
+        <div class="contactrow">
+
+            <div class="contactcol1">
+                <h2 class="sub-title">Contact Me</h2>
+                <p class="fa fa-envelope" id="mail"><a href="mailto:chidonnwigz@gmail.com"> chidonnwigz@gmail.com</a></p>
+                <br>
+                <p class="fa fa-phone"> 07067560560</p>
+                <div class="media">
+                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com"class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+
+                </div>
+                <br>
+                <!-- put my cv to download -->
+                <a href=""><button download>Download CV</button></a>
+            </div>
+
+            <div class="contactcol2">
+                <form action="" name="submit-to-google-sheet" method="post">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+            <br>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+            <br>
+            <textarea name="Message" id="message" cols="30" rows="10" required placeholder="Your Message"></textarea>
+            <br>
+        <button type="submit">Submit</button>
+                   </form>
+            <span id="msg"></span>
+            </div>
+    
+        </div>
+    </div>
+    <footer>
+        <p class="fa fa-copyright"> Copyright Chidiebere Nwigwe.2023</p>
+    </footer>
+
+</div>
+        
+<script>
+    let tablinks = document.getElementsByClassName("tablinks");
+    let tabcontents = document.getElementsByClassName("contents");
+    function opentab(tab){
+       for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+       }
+       for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+       }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tab).classList.add("active-tab");
+    }
+</script>
+<!-- <form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form> -->
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby5w9B3XwmB-ghg7NdQzPQ11kIEjhH8Gw562VSJSC8L7ZJdIlDzi9EAPCOzg7J2jVlw/exec'
+    const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Messsage sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

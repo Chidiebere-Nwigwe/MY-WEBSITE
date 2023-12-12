@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/IMG_9032.jpg);
+  background-size: cover;
+}
+.nav {
+  padding: 10px 10%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  position: relative;
+}
+nav h1 {
+  color: white;
+  font-size: 30px;
+  width: 140px;
+}
+nav h1::first-letter {
+  color: aquamarine;
+}
+nav h1::after {
+  color: aquamarine;
+  content: ".";
+}
+nav ul li a::after {
+  content: "";
+  text-decoration: underline;
+  height: 3px;
+  background: aquamarine;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 0;
+  top: -6px;
+}
+nav ul li a:hover {
+  color: green;
+}
+header + p {
+  position: absolute;
+  color: white;
+  top: 250px;
+  font-style: italic;
+  font-size: large;
+  padding: 10px 10%;
+  font-family: "Courier New", Courier, monospace;
+}
+header + p::first-letter {
+  color: aquamarine;
+}
+header + p::after {
+  color: aquamarine;
+  content: ".";
+}
+.firsth2 {
+  position: absolute;
+  color: white;
+  top: 300px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  padding: 10px 10%;
+}
+.firsth2::first-letter {
+  color: aquamarine;
+}
+.firsth2::after {
+  color: aquamarine;
+  content: ".";
+}
+h2 a {
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  color: aquamarine;
+}
+h2 a:hover {
+  text-decoration: underline;
+  color: green;
+}
+span {
+  color: aquamarine;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* my about */
+#about {
+  padding: 80px 0;
+  background-color: #000000;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.column1 {
+  flex-basis: 35%;
+}
+.column1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+.column2 {
+  flex-basis: 60%;
+  color: white;
+}
+.column2 h2,
+.sub-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 30px;
+  color: aquamarine;
+}
+.titles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 40px 0;
+}
+.tablinks {
+  flex-basis: 65%;
+  /* margin-right: 75px; */
+  font-size: medium;
+  font-weight: bolder;
+  cursor: pointer;
+  position: relative;
+}
+.tablinks::after {
+  content: "";
+  text-decoration: underline;
+  height: 3px;
+  background: aquamarine;
+  position: absolute;
+  left: 0;
+  width: 50%;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.tablinks:hover::after {
+  width: 0;
+  top: -6px;
+}
+
+.tablinks:hover {
+  color: aquamarine;
+}
+.tablinks.active-link {
+  color: green;
+}
+.contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.contents ul li span {
+  font-size: smaller;
+}
+.contents {
+  display: none;
+}
+.contents.active-tab {
+  display: block;
+}
+
+/* my hobbies */
+#hobbies {
+  margin-bottom: 100px;
+}
+.hobbies {
+  color: white;
+  padding: 10px 10%;
+}
+.section {
+  /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px; */
+  margin-top: 50px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.section div {
+  border-right: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.section div:hover {
+  /* background: aquamarine; */
+  /* padding: 40px; */
+  /* background: aquamarine; */
+  transform: translateY(-20px);
+}
+.section div img {
+  margin: 10px 10%;
+  border-radius: 10px;
+}
+
+.hobbiestext a {
+  text-decoration: none;
+  color: aquamarine;
+  font-size: 18px;
+  padding: 10px 10%;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.hobbiestext a:hover {
+  color: green;
+}
+
+/* my contact */
+#contact {
+  /* background-color: #000000;
+    margin-top: 0; */
+  color: white;
+  padding: 10px 10%;
+}
+.contactrow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contactcol1 {
+  flex-basis: 35%;
+}
+.contactcol2 {
+  margin: 10px 0;
+  flex-basis: 60%;
+}
+.contactcol1 p {
+  margin-top: 20px;
+}
+.media {
+  margin-top: 20px;
+}
+.media a {
+  /* padding: 10px 10%; */
+  margin-right: 30px;
+  height: 20px;
+  width: 2%;
+  color: aquamarine;
+  text-decoration: none;
+}
+.media a:hover {
+  text-decoration: underline;
+  color: green;
+}
+div h2 + p a,
+.contactcol1 p {
+  text-decoration: none;
+  color: aquamarine;
+}
+div h2 + p a:hover,
+.contactcol1 p:hover {
+  color: green;
+  text-decoration: underline;
+}
+button {
+  color: black;
+  background-color: aquamarine;
+  font-weight: bolder;
+  width: 100px;
+  text-align: center;
+  padding: 20px auto;
+  height: 5vh;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+input[type="text"] {
+  width: 80%;
+  margin-top: 20px;
+  height: 3vh;
+  background: #262626;
+  padding: 15px;
+  color: white;
+  font-weight: bolder;
+  border-radius: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input[type="email"] {
+  margin-top: 10px;
+  width: 80%;
+  height: 3vh;
+  background: #262626;
+  padding: 15px;
+  color: white;
+  font-weight: bolder;
+  border-radius: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+textarea {
+  width: 80%;
+  margin-top: 10px;
+  background: #262626;
+  padding: 15px;
+  color: white;
+  font-weight: bolder;
+  border-radius: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer {
+  border-top: 2px solid aquamarine;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color: aquamarine;
+  font-weight: bolder;
+  background-color: #262626;
+}
+footer p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* css for small screen */
+@media only screen and (max-width: 600px) {
+  header {
+    background-position: center;
+  }
+  nav ul li a {
+    font-size: smaller;
+    display: inline block;
+  }
+  nav h1 {
+    text-align: center;
+    margin-left: 70px;
+  }
+  nav {
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 5vw;
+  }
+  .navcon {
+    position: absolute;
+  }
+  header + p,
+  .firsth2 {
+    left: 70px;
+  }
+  .column2 {
+    padding-right: 10px;
+  }
+  img {
+    margin-top: 100px;
+    height: 70vw;
+    object-fit: contain;
+  }
+  .column2 p {
+    font-size: 14px;
+    /* align-items: center; */
+  }
+  #exp {
+    padding-right: 15px;
+  }
+  .sub-title + p {
+    display: inline-flex;
+    justify-content: space-around;
+    padding-right: 10px;
+  }
+  .contactrow {
+    font-size: small;
+  }
+  button[type="submit"] {
+    margin-top: 10px;
+  }
+  footer {
+    margin-bottom: 10px;
+    font-size: small;
+  }
+
+  .contents li {
+    font-size: 14px;
+  }
+  .contactcol1,
+  .contactcol2 {
+    flex-basis: 100%;
+  }
+  .section div img {
+    width: 300px;
+    margin: 10px 10%;
+    border-radius: px;
+  }
+
+  /* .column1, .column2{
+        flex-basis: 100%;
+    } */
+}
+/* .contents.act.hover{
+    display: block;
+} */
+/* figcaption{
+    flex-basis: 35%;
+    height: 45vh;
+} */
+/* #about{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: aquamarine;
+ font-style: italic;
+ height: vh;
+ width: ;
+}
+aside div p, aside div h2, aside div ul li{
+    font-family: 'Courier New', Courier, monospace;
+} */
