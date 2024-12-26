@@ -189,6 +189,39 @@ span {
   display: block;
 }
 
+/* my projects */
+.projects{
+  color: white;
+
+}
+#projects .container {
+  color: white;
+  padding: 10px 10%;
+}
+#projects .container .section p{
+  margin: 10px 10%;
+} 
+#projects .section .div{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#projects .section .div a{
+  text-decoration: none;
+  color: aquamarine;
+  margin-top: 20px;
+  display: inline-block;
+}
+#projects .section .div a:hover {
+  color: green;
+}
+#projects .section div img {
+  height: 15vh;
+  margin: 10px 10%;
+  border-radius: 10px;
+}
+#projects .section .div div p{
+  font-size: small;
+}
 /* my hobbies */
 #hobbies {
   margin-bottom: 100px;
