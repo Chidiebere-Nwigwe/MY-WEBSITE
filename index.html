@@ -149,7 +149,7 @@
             </div>
 
             <div class="contactcol2">
-                <form action="" name="submit-to-google-sheet" method="post">
+                <form action="https://script.google.com/macros/s/AKfycbyfa1zdzv75s-2doG4UtqHOzrJ0Gu_SP9bGpzIG_A-K7I6ULfOfIEgc3LwSGZRgJcQSQA/exec" name="submit-to-google-sheet" method="post">
                     <input type="text" name="Name" placeholder="Your Name" required>
             <br>
                     <input type="email" name="Email" placeholder="Your Email" required>
@@ -189,7 +189,7 @@
   </form> -->
   
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby5w9B3XwmB-ghg7NdQzPQ11kIEjhH8Gw562VSJSC8L7ZJdIlDzi9EAPCOzg7J2jVlw/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyfa1zdzv75s-2doG4UtqHOzrJ0Gu_SP9bGpzIG_A-K7I6ULfOfIEgc3LwSGZRgJcQSQA/exec'
     const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")
     form.addEventListener('submit', e => {
@@ -199,7 +199,7 @@
             msg.innerHTML = "Messsage sent successfully"
             setTimeout(function(){
                 msg.innerHTML = ""
-            },5000)
+            },2000)
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
