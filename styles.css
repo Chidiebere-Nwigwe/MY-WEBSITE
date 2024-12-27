@@ -467,26 +467,33 @@ footer p {
   header {
     background-position: center;
   }
-  nav ul li a {
+  #header .nav{
+    padding: 10px 5%;
+  }
+  /* nav ul li a {
     font-size: smaller;
     display: inline block;
-  }
+    
+  } */
+
+  
   nav h1 {
     text-align: center;
-    margin-left: 70px;
+    padding: 10px 5%;
   }
   nav {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    margin-right: 5vw;
+    /* margin-right: 5vw; */
   }
   .navcon {
     position: absolute;
-  }
+  } 
   header + p,
   .firsth2 {
-    left: 70px;
+    padding: 10px 10%;
   }
+
   .column2 {
     padding-right: 10px;
   }
@@ -537,25 +544,5 @@ footer p {
     display: flex;
     align-self:first baseline;
   }
-  /* .column1, .column2{
-        flex-basis: 100%;
-    } */
 }
-/* .contents.act.hover{
-    display: block;
-} */
-/* figcaption{
-    flex-basis: 35%;
-    height: 45vh;
-} */
-/* #about{
-    padding-left: 20px;
-    padding-right: 20px;
-    color: aquamarine;
- font-style: italic;
- height: vh;
- width: ;
-}
-aside div p, aside div h2, aside div ul li{
-    font-family: 'Courier New', Courier, monospace;
-} */
+
