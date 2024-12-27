@@ -190,7 +190,7 @@ span {
 }
 
 /* my projects */
-.projects{
+/* .projects{
   color: white;
 
 }
@@ -201,24 +201,96 @@ span {
 #projects .container .section p{
   margin: 10px 10%;
 } 
-#projects .section .div {
+#projects .section .div{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+#projects .section div img {
+  height: 20vh;
+} */
+
+/* my projects */
+.projects {
+  color: white;
+}
+#projects{
+  margin-bottom: 100px;
+}
+#projects .container h1{
+  padding: 25px ;
+}
+#projects .container {
+  color: white;
+  padding: 10px 8%;
+  
+}
+
+#projects .container .section p {
+  margin: 10px 10%;
+}
+
+#projects .section .div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+}
+#projects .section div img {
+  height: 20vh;
+  width: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  #projects .section .div {
+      grid-template-columns: 1fr; 
+  }
+
+  #projects .section div img {
+      height: 20vh; /* Adjust height for better proportions */
+      width: 100vw; /* Make image scale to its container */
+      max-width: 150px; /* Prevent it from becoming too large */
+      margin: 0 0 10px 0; /* Align image to the left and add space below */
+      float: left; /* Align image to the left */
+  }
+
+  #projects .section div p {
+      margin: 0 0 0 10px; /* Add space to the left of the text */
+  }
+}
+@media (max-width: 1024px){
+  #projects .section div img {
+    height: 20vh; /* Adjust height for better proportions */
+    width: 100vw; /* Make image scale to its container */
+    max-width: 150px; /* Prevent it from becoming too large */
+    margin: 0 0 10px 0; /* Align image to the left and add space below */
+    float: left; /* Align image to the left */
+    object-fit: cover;
+}
+}
+
+
+
+
+
+
+
 
 /* For screens less than 768px wide (tablets and phones) */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #projects .section .div {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} */
 
 /* For screens less than 480px wide (phones) */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   #projects .section .div {
     grid-template-columns: 1fr;
   }
-}
+} */
 
 #projects .section .div a{
   text-decoration: none;
@@ -230,7 +302,7 @@ span {
   color: green;
 }
 #projects .section div img {
-  height: 15vh;
+  /* height: 15vh; */
   margin: 10px 10%;
   border-radius: 10px;
 }
@@ -238,7 +310,7 @@ span {
   font-size: small;
 }
 /* my hobbies */
-#hobbies {
+#hobbies { 
   margin-bottom: 100px;
 }
 .hobbies {
@@ -459,6 +531,12 @@ footer p {
     border-radius: px;
   }
 
+  /* my projects */
+  #projects .section .div div img {
+    position: relative;
+    display: flex;
+    align-self:first baseline;
+  }
   /* .column1, .column2{
         flex-basis: 100%;
     } */
