@@ -245,7 +245,7 @@ span {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   #projects .section .div {
-      grid-template-columns: 1fr; 
+      grid-template-columns: 0.8fr; 
   }
 
   #projects .section div img {
@@ -536,13 +536,6 @@ footer p {
     width: 300px;
     margin: 10px 10%;
     border-radius: px;
-  }
-
-  /* my projects */
-  #projects .section .div div img {
-    position: relative;
-    display: flex;
-    align-self:first baseline;
   }
 }
 
