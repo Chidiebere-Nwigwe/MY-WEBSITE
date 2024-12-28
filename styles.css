@@ -28,7 +28,7 @@ nav {
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 10px 10px;
 }
 nav ul li a {
   text-decoration: none;
@@ -36,7 +36,7 @@ nav ul li a {
   font-size: 18px;
   position: relative;
 }
-nav h1 {
+/* nav h1 {
   color: white;
   font-size: 30px;
   width: 140px;
@@ -47,7 +47,7 @@ nav h1::first-letter {
 nav h1::after {
   color: aquamarine;
   content: ".";
-}
+} */
 nav ul li a::after {
   content: "";
   text-decoration: underline;
@@ -190,26 +190,6 @@ span {
 }
 
 /* my projects */
-/* .projects{
-  color: white;
-
-}
-#projects .container {
-  color: white;
-  padding: 10px 10%;
-}
-#projects .container .section p{
-  margin: 10px 10%;
-} 
-#projects .section .div{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-#projects .section div img {
-  height: 20vh;
-} */
-
-/* my projects */
 .projects {
   color: white;
 }
@@ -241,7 +221,6 @@ span {
   margin: 0 auto; 
 }
 
-
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   #projects .section .div {
@@ -249,48 +228,27 @@ span {
   }
 
   #projects .section div img {
-      height: 20vh; /* Adjust height for better proportions */
-      width: 100vw; /* Make image scale to its container */
-      max-width: 150px; /* Prevent it from becoming too large */
-      margin: 0 0 10px 0; /* Align image to the left and add space below */
-      float: left; /* Align image to the left */
+      height: 20vh; 
+      width: 100vw; 
+      max-width: 150px; 
+      margin: 0 0 10px 0; 
+      float: left; 
   }
 
   #projects .section div p {
-      margin: 0 0 0 10px; /* Add space to the left of the text */
+      margin: 0 0 0 10px; 
   }
 }
 @media (max-width: 1024px){
   #projects .section div img {
-    height: 20vh; /* Adjust height for better proportions */
-    width: 100vw; /* Make image scale to its container */
-    max-width: 150px; /* Prevent it from becoming too large */
-    margin: 0 0 10px 0; /* Align image to the left and add space below */
-    float: left; /* Align image to the left */
+    height: 20vh; 
+    width: 100vw; 
+    max-width: 150px; 
+    margin: 0 0 10px 0; 
+    float: left; 
     object-fit: cover;
 }
 }
-
-
-
-
-
-
-
-
-/* For screens less than 768px wide (tablets and phones) */
-/* @media (max-width: 768px) {
-  #projects .section .div {
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
-
-/* For screens less than 480px wide (phones) */
-/* @media (max-width: 480px) {
-  #projects .section .div {
-    grid-template-columns: 1fr;
-  }
-} */
 
 #projects .section .div a{
   text-decoration: none;
@@ -318,9 +276,6 @@ span {
   padding: 10px 10%;
 }
 .section {
-  /* display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    grid-gap: 40px; */
   margin-top: 50px;
   flex-direction: column;
   flex-wrap: wrap;
@@ -330,9 +285,6 @@ span {
   transition: background 0.5s, transform 0.5s;
 }
 .section div:hover {
-  /* background: aquamarine; */
-  /* padding: 40px; */
-  /* background: aquamarine; */
   transform: translateY(-20px);
 }
 .section div img {
@@ -355,8 +307,6 @@ span {
 
 /* my contact */
 #contact {
-  /* background-color: #000000;
-    margin-top: 0; */
   color: white;
   padding: 10px 10%;
 }
@@ -380,7 +330,6 @@ span {
   margin-top: 20px;
 }
 .media a {
-  /* padding: 10px 10%; */
   margin-right: 30px;
   height: 20px;
   width: 2%;
@@ -470,12 +419,9 @@ footer p {
   #header .nav{
     padding: 10px 5%;
   }
-  /* nav ul li a {
-    font-size: smaller;
-    display: inline block;
-    
-  } */
-
+  nav ul li a {
+    font-size: small;
+  }
   
   nav h1 {
     text-align: center;
@@ -504,7 +450,6 @@ footer p {
   }
   .column2 p {
     font-size: 14px;
-    /* align-items: center; */
   }
   #exp {
     padding-right: 15px;
